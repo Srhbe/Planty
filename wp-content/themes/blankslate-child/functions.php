@@ -8,3 +8,11 @@ function theme_enqueue_styles() {
  wp_enqueue_style( 'custom', get_stylesheet_directory_uri() . '/css/custom.css' );
 
 }
+
+add_filter( 'wp_nav_menu_items', 'add_extra_item_to_nav_menu', 10, 2 );
+function add_extra_item_to_nav_menu( $items, $args ) {
+    if (is_user_logged_in() && $args->theme_location == 'main-menu') {
+        $items .= '<li><a href="/wp-admin">Admin</a></li>';
+    }
+    return $items;
+}

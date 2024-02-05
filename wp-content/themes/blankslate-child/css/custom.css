@@ -4,12 +4,10 @@ header {
     padding-left: 37px;
 }
 
-header nav {
+header nav ul {
     display: flex;
-    justify-content: flex-end;
-    gap: 20px;
+    justify-content: space-around;
     height: 80px;
-    width: 1440px;
     font-family: Syne;
     font-size: 16px;
 }
@@ -17,16 +15,21 @@ header nav {
 header img {
     width: 201px;
     padding-top: 30px;
-    padding-bottom: 30px;
 }
 
-nav a {
+header nav li {
+    padding: 0 20px;
     padding-top: 31px;
     color: inherit;
     text-decoration: none;
 }
 
-.commander {
+a {
+    color: inherit;
+    text-decoration: none;
+} 
+
+header nav li:nth-last-child(2) {
     display: flex;
     color: white;
     background-color: #DC9F96;
@@ -34,7 +37,128 @@ nav a {
     justify-content: center;
 }
 
+header nav li:nth-last-child(1) {
+    order: 2;
+}
 
+header nav li:nth-last-child(2) {
+    order: 3;
+}
+
+.qty span, .qty input {
+    width: 50px;
+}
+
+.qty p {
+    display: flex;
+  justify-content: space-between;
+    padding: 0px 50px 38px;
+}
+
+.qty:after {
+     content: " ";
+       display: flex;
+   background: white;
+   height: 1px;
+     margin: 40px;
+}
+
+.contact {
+   display: flex;
+   justify-content: space-around;
+   color: white;
+   font-family: Syne;
+}
+
+.contact:after {
+     content: " ";
+       display: flex;
+       justify-content: row;
+   background: white;
+   height: 250px;
+       width: 1px;
+       position: absolute;
+}
+
+.contact p {
+     display: flex;
+   flex-direction: column;
+   align-items: center;
+       padding-bottom: 40px;
+}
+
+.wpcf7-text, .wpcf7-email, .wpcf7-textarea {
+   display: flex;
+   justify-content: center;
+   padding: 15px;
+   width: 100%;
+   border: 0;
+   border-radius: 7px !important;
+}
+
+.wpcf7-text, .wpcf7-email, .wpcf7-textarea:hover {
+   color: inherit;
+   text-decoration: none;
+}
+
+.contact p label {
+   display:flex;
+   flex-direction: column;
+   gap: 10px;
+}
+
+.button-end {
+   display: flex;
+   justify-content: center;
+}
+
+.commander-formulaire {
+   background: #E0B9B4;
+   color: #fff;
+   font-size: 15px;
+   font-family: Syne;
+   font-weight: 400;
+   text-align: center;
+   padding: 15px 40px 15px 40px;
+   border: 0px;
+   border-radius: 3px !important;
+   border-color: #E0B9B4;
+}
+
+.elementor-shortcode .wpcf7-spinner {
+    display: none;
+}
+
+.button-send {
+   display: flex;
+ justify-content: center;
+}
+
+.envoyer-formulaire {
+   background: #E0B9B4;
+   color: #fff;
+   font-size: 15px;
+   font-family: Syne;
+   font-weight: 400;
+   text-align: center;
+   padding: 15px 40px 15px 40px;
+   border: 0px;
+   border-radius: 3px !important;
+   margin: 35px;
+}
+
+.contact-planty {
+     display: flex;
+   flex-direction: column;
+   gap: 20px;
+       font-family: Syne;
+}
+
+.contact-planty p label {
+   display:flex;
+   flex-direction: column;
+   gap: 10px;
+}
 
 footer { 
     display: flex;
@@ -50,4 +174,91 @@ footer a {
     text-decoration: none;
 }
 
+/*** Media queries ***/
+
+@media (max-width: 1024px)
+{
+    body {
+        width: 100%;
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media  (max-width: 768px) {
+
+    body {
+        width: 100%;
+        overflow-x: hidden;
+        margin: 0;
+        padding: O;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        padding: 0px 0px 0px;
+        align-items: center;
+    }
+
+    header img {
+        width: 300px;
+    }
+
+    header nav ul {
+        display: flex;
+        flex-direction : column;
+        height: 100%;
+        justify-content: center;
+    }
+
+    header nav li {
+        display: flex;
+        align-items: center;
+    justify-content: center;
+    }
+
+    header nav li:nth-last-child(2) {
+        display: flex;
+        color: white;
+        background-color: #DC9F96;
+        width: 240px;
+        justify-content: center;
+        padding-bottom: 20px;
+        margin-top: 15px;
+    }
+
+
+    .qty p {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      justify-content: space-between;
+        padding: 0px 50px;
+   }
+   .qty:after {
+    content: " ";
+      display: flex;
+    background: white;
+    height: 1px;
+    margin: 10px;
+    }
+    .contact:after {
+        content: " ";
+        display: flex;
+        justify-content: row;
+        background: white;
+        height: 150px;
+        width: 1px;
+        position: absolute;
+    }
+    .contact {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        color: white;
+        font-family: Syne;
+    }
+    }
 

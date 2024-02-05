@@ -52,13 +52,16 @@ input::-webkit-inner-spin-button {
 }
 
 .qty span, .qty input {
-    width: 50px;
+    width: 30px;
+    height: 40px;
+    padding: 1px 9px;
 }
 
 .qty p {
     display: flex;
-  justify-content: space-between;
-    padding: 0px 50px 38px;
+    padding: 0px 70px 38px;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 .qty:after {

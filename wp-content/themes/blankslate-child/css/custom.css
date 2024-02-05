@@ -10,6 +10,7 @@ header nav ul {
     height: 80px;
     font-family: Syne;
     font-size: 16px;
+    gap: 25px
 }
 
 header img {
@@ -246,20 +247,29 @@ footer a {
       justify-content: space-between;
         padding: 0px 50px;
    }
+
+   .qty span  {
+    width: 30px;
+    height: 40px;
+    padding: 1px 9px;
+    margin: 0px 20px 0px 0px;
+   }
+
    .qty:after {
     content: " ";
-      display: flex;
+    display: flex;
     background: white;
     height: 1px;
-    margin: 10px;
+    margin: 40px ;
     }
+
     .contact:after {
         content: " ";
         display: flex;
         justify-content: row;
         background: white;
-        height: 150px;
-        width: 1px;
+        height: 0px;
+        width: 0px;
         position: absolute;
     }
     .contact {

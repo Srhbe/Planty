@@ -46,6 +46,11 @@ header nav li:nth-last-child(2) {
     order: 3;
 }
 
+.elementor-141 .elementor-element.elementor-element-45684a7 .elementor-divider-separator {
+    width: 90%;
+}
+
+
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -60,7 +65,7 @@ input::-webkit-inner-spin-button {
 
 .qty p {
     display: flex;
-    padding: 0px 70px 38px;
+    padding: 0px 60px 38px;
     flex-direction: row;
     justify-content: space-around;
 }
@@ -83,7 +88,6 @@ input::-webkit-inner-spin-button {
 .contact:after {
      content: " ";
        display: flex;
-       justify-content: row;
    background: white;
    height: 250px;
        width: 1px;
@@ -132,7 +136,6 @@ input::-webkit-inner-spin-button {
    padding: 15px 40px 15px 40px;
    border: 0px;
    border-radius: 3px !important;
-   border-color: #E0B9B4;
 }
 
 .elementor-shortcode .wpcf7-spinner {
@@ -192,7 +195,6 @@ footer a {
         width: 100%;
         overflow-x: hidden;
         margin: 0;
-        padding: 0;
     }
 }
 
@@ -202,7 +204,6 @@ footer a {
         width: 100%;
         overflow-x: hidden;
         margin: 0;
-        padding: O;
     }
 
     header {
@@ -221,6 +222,7 @@ footer a {
         flex-direction : column;
         height: 100%;
         justify-content: center;
+        gap: 10px;
     }
 
     header nav li {
@@ -266,7 +268,6 @@ footer a {
     .contact:after {
         content: " ";
         display: flex;
-        justify-content: row;
         background: white;
         height: 0px;
         width: 0px;

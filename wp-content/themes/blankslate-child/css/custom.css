@@ -45,6 +45,12 @@ header nav li:nth-last-child(2) {
     order: 3;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 .qty span, .qty input {
     width: 50px;
 }
